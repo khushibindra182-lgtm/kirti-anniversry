@@ -10,20 +10,47 @@
 
 <div class="quiz-box">
 
-<h1>✨ One Little Challenge 💖</h1>
+<h1>✨ Memory Unlock Challenge 💖</h1>
 
-<h2>What makes our memories special? 🌸</h2>
+<h2 id="question">
+What was the most special thing about our first month? 🌸
+</h2>
 
-<button onclick="unlock()">Our smiles 😊</button>
-<button onclick="unlock()">Our talks 💬</button>
-<button onclick="unlock()">Everything about us ❤️</button>
+<button onclick="nextQuestion()">Our talks 💬</button>
+
+<button onclick="nextQuestion()">Our memories 📸</button>
+
+<button onclick="nextQuestion()">Our smiles ❤️</button>
 
 </div>
 
+
 <script>
 
-function unlock(){
+let count = 0;
+
+let questions = [
+"What is one thing that always makes you happy? 😊",
+"Are you ready to see our special memory? ✨"
+];
+
+
+function nextQuestion(){
+
+if(count < questions.length){
+
+document.getElementById("question").innerHTML = questions[count];
+
+count++;
+
+}
+
+else{
+
 window.location.href="memory.html";
+
+}
+
 }
 
 </script>
