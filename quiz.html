@@ -9,7 +9,11 @@
 
 <div class="quiz-box">
 
-<h1>🏰 Our Little Fairytale ✨</h1>
+<h1>🏰 Welcome to Our Magical Story ✨</h1>
+
+<p class="intro">
+Once upon a time... two hearts started a beautiful journey ❤️
+</p>
 
 <h2 id="question">When did our beautiful story begin? 💖</h2>
 
@@ -85,3 +89,18 @@ document.getElementById("options").innerHTML =
 }
 
 </script>
+.intro {
+  font-size: 20px;
+  font-style: italic;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px white;
+  }
+
+  to {
+    text-shadow: 0 0 20px pink;
+  }
+}
