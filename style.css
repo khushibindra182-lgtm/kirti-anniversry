@@ -160,3 +160,29 @@ button:hover {
   }
 
     }
+body {
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "✨ ⭐ ✨ ⭐ ✨ ⭐ ✨";
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  font-size: 30px;
+  letter-spacing: 40px;
+  opacity: 0.5;
+  animation: starsMove 8s infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes starsMove {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(20px);
+  }
+    }
