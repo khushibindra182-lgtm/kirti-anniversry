@@ -24,6 +24,28 @@
 <p>✨ Unlock the magic one answer at a time ✨</p>
 
 </div>
+<script>
+function createMagic(){
 
+let magic = document.createElement("div");
+
+magic.innerHTML = ["✨","💖","⭐","❤️"][Math.floor(Math.random()*4)];
+
+magic.style.position = "fixed";
+magic.style.bottom = "-20px";
+magic.style.left = Math.random()*100 + "vw";
+magic.style.fontSize = "25px";
+magic.style.animation = "float 6s linear";
+
+document.body.appendChild(magic);
+
+setTimeout(()=>{
+magic.remove();
+},6000);
+
+}
+
+setInterval(createMagic,300);
+</script>
 </body>
 </html>
