@@ -283,3 +283,18 @@ body {
   }
 
 }
+.unlock-title {
+  animation: unlockGlow 2s infinite alternate;
+}
+
+@keyframes unlockGlow {
+
+  from {
+    text-shadow: 0 0 5px white;
+  }
+
+  to {
+    text-shadow: 0 0 25px pink;
+  }
+
+}
