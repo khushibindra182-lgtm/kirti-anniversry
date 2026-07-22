@@ -119,7 +119,22 @@ button:hover {
     transform: translateY(0) rotate(0deg);
     opacity: 1;
   }
+.surprise {
+  min-height: 100vh;
+  background: linear-gradient(#09001f, #4b1a68);
+  text-align: center;
+  padding-top: 80px;
+}
 
+.surprise h1 {
+  font-size: 40px;
+  animation: glow 2s infinite alternate;
+}
+
+.surprise p {
+  font-size: 20px;
+  line-height: 1.6;
+}
   to {
     transform: translateY(-100vh) rotate(360deg);
     opacity: 0;
