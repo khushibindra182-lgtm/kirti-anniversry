@@ -1,4 +1,4 @@
-const PASSWORD = "kirti"; // Change this to your secret password
+const PASSWORD = "loveforever"; // Change this to your secret password
 
 function checkPassword() {
   const input = document.getElementById("password").value;
