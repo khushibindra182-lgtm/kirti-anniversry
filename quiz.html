@@ -51,3 +51,37 @@ setInterval(createMagic,300);
 </script>
 </body>
 </html>
+<script>
+
+let count = 0;
+
+let questions = [
+"How did you feel when we first started talking? 💖",
+"What is your favorite thing about us? ✨",
+"Are you ready for your magical surprise? 🎁"
+];
+
+
+function nextQuestion(){
+
+if(count < questions.length){
+
+document.getElementById("question").innerHTML = questions[count];
+
+count++;
+
+}
+
+else{
+
+document.getElementById("question").innerHTML =
+"✨ Magic Unlocked! Our story continues ❤️";
+
+document.getElementById("options").innerHTML =
+"<button onclick=\"location.href='index.html'\">Open Surprise 🎁</button>";
+
+}
+
+}
+
+</script>
