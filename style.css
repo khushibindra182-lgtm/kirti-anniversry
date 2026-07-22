@@ -181,7 +181,27 @@ body::before {
   from {
     transform: translateY(0);
   }
+.ending {
+  margin-top: 50px;
+  text-align: center;
+  animation: fadeMagic 3s infinite alternate;
+}
 
+.ending h2 {
+  font-size: 30px;
+}
+
+@keyframes fadeMagic {
+  from {
+    opacity: 0.5;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
   to {
     transform: translateY(20px);
   }
