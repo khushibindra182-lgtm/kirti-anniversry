@@ -81,3 +81,35 @@ animation:pop 1s infinite alternate;
 from{transform:scale(1);}
 to{transform:scale(1.08);}
 }
+body {
+  background: linear-gradient(#12002f, #4b1a68);
+  color: white;
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+.quiz-box {
+  margin: 80px auto;
+  padding: 30px;
+  width: 80%;
+  max-width: 500px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 25px;
+  box-shadow: 0 0 30px pink;
+}
+
+button {
+  background: #ff8fd8;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  margin: 10px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px white;
+}
