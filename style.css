@@ -113,3 +113,16 @@ button:hover {
   transform: scale(1.1);
   box-shadow: 0 0 20px white;
 }
+@keyframes float {
+
+  from {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
+
+}
