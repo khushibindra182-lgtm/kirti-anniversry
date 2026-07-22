@@ -221,3 +221,22 @@ body {
     transform: scale(1);
   }
 }
+.ending::after {
+  content: "❤️ ✨ 💖 ✨ ❤️";
+  display: block;
+  font-size: 25px;
+  margin-top: 20px;
+  animation: heartFloat 2s infinite alternate;
+}
+
+@keyframes heartFloat {
+
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+
+}
